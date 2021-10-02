@@ -16,7 +16,7 @@ class ValidatorTest {
     }
     @Test
     void passwordChecker_passwordLengthTest(){
-        String password = "ggg123";
+        String password = "Ggg123";
         assertTrue(validator.validatePassword(password));
     }
     @Test
@@ -26,17 +26,17 @@ class ValidatorTest {
     }
     @Test
     void passwordChecker_passwordContainsSpecialSymbolTest(){
-        String password = "ggg123";
+        String password = "Ggg123";
         assertTrue(validator.validatePassword(password));
     }
     @Test
     void phoneValidator_numberLengthTest(){
-        String number = "   ";
+        String number = "2452";
         assertTrue(validator.validatePhone(number));
     }
     @Test
     void phoneValidator_numberContainsCorrectSymbolsTest(){
-        String number = "555ggg";
+        String number = "5551414";
         assertTrue(validator.validatePhone(number));
     }
     @Test
